@@ -1,7 +1,8 @@
 ## Epic Export can export your list of games from Epic Games in a nice HTML table.
 
+I tested it on Linux only, but should work on other platforms too.
+
 ## Setup
-- [Install Go](https://go.dev/doc/install), if you don't have it already.
 - Install curl, if you don't have it already.
 
 ## Usage
@@ -15,8 +16,16 @@
 1. Use that filename with path below in <exported>.
 1. Call
 
+On Linux or Mac:
+
 ```sh
-go run . -i <exported> -o <output>
+epic-export -i <exported> -o <output>
+```
+
+On Windows:
+
+```sh
+epic-export.exe -i <exported> -o <output>
 ```
 
 It will run through the list of exported games, and search for them.
@@ -30,5 +39,20 @@ It will run through the list of exported games, and search for them.
 
 The output will be an html file that shows your games in a table, that you can share with others.
 
+## Run from code
+Make sure to [Install Go](https://go.dev/doc/install), if you don't have it already. Then
+
+
+```sh
+go run . -i <exported> -o <output>
+```
+
+OR
+
+```sh
+go build .
+./epic-export -i <exported> -o <output>
+```
+
 ## Contribute
-Feel free to raise an issue or try and build it for Windows or Mac.
+Feel free to raise an issue or try and build it for other platforms.
