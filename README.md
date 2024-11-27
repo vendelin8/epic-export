@@ -38,6 +38,7 @@ It will run through the list of exported games, and search for them.
   1. You can type in the game URL by hand of a custom Google Search, maybe based on some text in the logo.
 
 The output will be an html file that shows your games in a table, that you can share with others.
+Example output looks like: https://vendelin8.github.io/epic-export/
 
 ## Run from code
 Make sure to [Install Go](https://go.dev/doc/install), if you don't have it already. Then
